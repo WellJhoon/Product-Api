@@ -11,7 +11,7 @@
     "clean":""
   },
   "keywords": [],
-  "author": "",
+  "author": "Jhon Medina",
   "license": "ISC",
   "dependencies": {
     "bcryptjs": "^2.4.3",
