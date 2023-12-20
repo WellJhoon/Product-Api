@@ -1,33 +1,38 @@
 {
-  "name": "product-api",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "name": "products-api",
+  "version": "0.0.1",
+  "description": "REST API with authentication and authorization",
+  "main": "src/index.js",
+  "type": "module",
   "scripts": {
-    "build":"babel src --out-dir build",
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "nodemon src/index.js --exec babel-node",
-    "start": "node build/index.js",
-    "clean":""
+    "dev": "nodemon src/index.js",
+    "start": "node src/index.js",
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/WellJhoon/Product-Api"
   },
   "keywords": [],
-  "author": "Jhon Medina",
+  "author": "Jhon MEdina",
   "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/WellJhoon/Product-Api"
+  },
+  "homepage": "https://github.com/WellJhoon/Product-Api",
+  "devDependencies": {
+    "jest": "^28.1.3",
+    "nodemon": "^2.0.19",
+    "supertest": "^6.2.4"
+  },
   "dependencies": {
     "bcryptjs": "^2.4.3",
     "cors": "^2.8.5",
-    "dotenv": "^16.3.1",
-    "express": "^4.18.2",
-    "helmet": "^7.1.0",
-    "jsonwebtoken": "^9.0.2",
-    "mongoose": "^8.0.3",
+    "dotenv": "^16.0.1",
+    "express": "^4.18.1",
+    "helmet": "^5.1.1",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^6.5.0",
     "morgan": "^1.10.0"
-  },
-  "devDependencies": {
-    "@babel/cli": "^7.23.4",
-    "@babel/core": "^7.23.6",
-    "@babel/node": "^7.22.19",
-    "@babel/preset-env": "^7.23.6",
-    "nodemon": "^3.0.2"
   }
 }
